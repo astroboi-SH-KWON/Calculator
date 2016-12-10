@@ -27,6 +27,6 @@ public class CalcServiceImpl implements CalcService{
     @Override
     public int divid(CalcDTO param) {
         return param.getNum1() / param.getNum2();
-        
+
     }
 }

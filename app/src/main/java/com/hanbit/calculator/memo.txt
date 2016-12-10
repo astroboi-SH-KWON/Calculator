@@ -1,0 +1,106 @@
+
+java 문법
+oop 개념 : 객체지향언어"은 상추다."
+-object oriented programming(4)
+- (1)Encapsulation 클래스 은닉화 해라
+- (2)Inheritance 클래스를 상속구조로 작성하라
+- (3)Abstraction 인터페이스를 통한 추상화를 하라
+- (4)Poly Morphism 다향성을 염두에 두고 클래스를 작성하라.
+
+
+MVC 패턴 : Web서버 구축시
+- Model(서버)
+- View(화면)
+_ Controller(데이타 전송)---URL
+
+MVVM 패턴 : App서버 구축시
+- Model(서버)
+- View(화면)---activity_main.xml
+_ ViewModel(일체화된 데이타 전송)---MainActivity.java
+
+
+https://developer.android.com/index.html
+
+
+설정 패키지(4가지)
+(1) JDK : JAVA 8
+(2) SDK, ADT : Android Studio (IDE)
+(3)Emulator : Genymotion (https://www.genymotion.com/download/)
+(4)Version Control : Git (https://git-scm.com/download/win)
+
+Shortcut(단축키)
+win +R > cmd > java -version
+
+CAS : Ctr+Alt+S
+- (1) Auto Import 모두 체크
+- (2) Appearance (show line numbers만 체크)
+- (3) Font
+- (4) genymotion
+
+Go line : Ctrl +g
+Copy line : Ctrl +d
+Delete line : Ctrl +y
+
+Auto Complete : Alt + Enter
+Auto Import : Alt + Ins
+
+
+Naming Convention :
+대 ...대... : Pascal -> 클래스/인터페이스
+소...대... : Carmel 낙타표기법/변수
+under score : Static Source 표기법
+
+
+EditText etNum1,etNum2;
+Button btPlus,btMinus,btMulti,btDiv,btEq;
+TextView tvResult;
+
+continue
+for
+new
+switch
+package
+if
+if as
+import
+extend
+int
+return
+class
+interface
+
+1. Object 는 속성(property)과 기능(method)의 합이다.
+2. property는 field에 존재
+3. method는 area에 존재한다.
+
+
+field는 속성을 담당하므로 연산을 하지 않고 선언만 한다.
+area는 기능을 담당하므로 반드시 연산을 해야한다.
+
+
+Java 선언(declation)하는 방법
+class ID{}
+void ID(){}
+switch (){}, for(){}, if(){}...
+
+
+
+
+
+
+when creat
+
+git init
+git add -A
+git config --global user.email "terry007x@naver.com"
+git config --global user.name "terry007x"
+git commit -m "first commit"
+git remote add origin https://github.com/terry007x/Calculator.git
+git push -u origin master
+
+
+when update
+
+git add -A
+git commit -m "final commit"
+git push -u origin master
