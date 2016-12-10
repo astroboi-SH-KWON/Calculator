@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULATOR"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/etNum1"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etNum2"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btPlus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+"
+        />
+    <Button
+        android:id="@+id/btMinus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"/>
+    <Button
+        android:id="@+id/btMulti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*"/>
+    <Button
+        android:id="@+id/btDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/"/>
+
+    <Button
+        android:id="@+id/btEq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="="/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ba1c1c"
+        android:paddingTop="20dp"
+        android:text="RESULT : "/>
+
+</LinearLayout>
