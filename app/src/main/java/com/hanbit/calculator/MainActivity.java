@@ -7,11 +7,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.hanbit.calculator.domain.CalcDTO;
+import com.hanbit.calculator.service.CalcService;
+import com.hanbit.calculator.service.CalcServiceImpl;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     EditText etNum1,etNum2;
     Button btPlus,btMinus,btMulti,btDiv,btEq;
     TextView tvResult;
     int result ;
+    CalcService service;
+    CalcDTO cal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btMulti.setOnClickListener(this);
         btDiv.setOnClickListener(this);
         btEq.setOnClickListener(this);
+        service = new CalcServiceImpl();
+        cal = new CalcDTO();
 
     }
 
@@ -36,19 +44,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         int num1 = Integer.parseInt(String.valueOf(etNum1.getText()));
         int num2 = Integer.parseInt(String.valueOf(etNum2.getText()));
+        cal.setNum1(num1);
+        cal.setNum2(num2);
 
         switch(v.getId()){
             case R.id.btPlus:
-                result = num1 + num2;
+                result =service.plus(cal);
                 break;
             case R.id.btMinus:
-                result = num1 - num2;
+                result = service.minus(cal);
                 break;
             case R.id.btMulti:
-                result = num1*num2;
+                result = service.multi(cal);
                 break;
             case R.id.btDiv:
-                result = num1/num2;
+                result = service.divid(cal);
                 break;
             case R.id.btEq:
                 tvResult.setText("RESULT : " +result);
